@@ -25,21 +25,6 @@ public class Application_RetrieveData {
 		try {	
 			// start a transaction
 			session.beginTransaction();
-			
-			//creating user
-			User user = new User();
-			user.setFirstName("Kevin");
-			user.setLastName("Ahyttt");
-			user.setBirthDate(new Date());
-			
-			user.setEmailAddress("kmb385@yahoo.com");
-			user.setFirstName("Kevin");
-			user.setLastName("Bowersox");
-			user.setLastUpdatedBy("kevin");
-			user.setLastUpdatedDate(new Date());
-			
-			// save the courses
-			session.save(user);
 						
 			// commit transaction
 			session.getTransaction().commit();

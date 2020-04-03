@@ -28,8 +28,8 @@ public class Application_CreateData {
 			
 			//creating user
 			User user = new User();
-			user.setFirstName("Kevin____________");
-			user.setLastName("Ahytttyyyyyyyyyyyyyyyy");
+			user.setFirstName("Kevin");
+			user.setLastName("Ahyttt");
 			user.setBirthDate(new Date());
 			user.setEmailAddress("kmb385@yahoo.com");
 			user.setLastUpdatedBy("kevin");
