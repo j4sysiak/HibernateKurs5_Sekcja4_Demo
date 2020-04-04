@@ -29,7 +29,7 @@ public class User {
 	@Column(name="LAST_NAME")
 	private String lastName;
 
-	@Column(name="BIRTH_DATE")
+	@Column(name="BIRTH_DATE", nullable = true)
 	private Date birthDate;
 	
 	@Column(name="EMAIL_ADDRESS")
