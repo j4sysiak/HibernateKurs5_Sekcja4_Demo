@@ -1,7 +1,5 @@
 package pl.jaceksysiak.demo;
 
-import java.util.Date;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -25,7 +23,12 @@ public class Application_RetrieveData {
 		try {	
 			// start a transaction
 			session.beginTransaction();
-						
+			
+		    //get Employee from DB
+			int tmpUserId=1;
+			User tmpUser = session.get(User.class, tmpUserId);
+			System.out.println("User: " + tmpUser.getFirstName());
+			
 			// commit transaction
 			session.getTransaction().commit();
 		}
